@@ -1,0 +1,25 @@
+@startuml
+start
+
+:Login;
+
+partition Admin {
+    :Admin Login;
+    :Pilih Fitur Pengelolaan Barang;
+    :Tambah Data Barang;
+    :Ubah Data Barang;
+    :Hapus Data Barang;
+    :Update Data Barang ke Database;
+    :Lihat Laporan Stok;
+}
+
+partition Karyawan {
+    :Karyawan Login;
+    :Lihat Data Barang;
+    :Catat Transaksi Penjualan;
+    :Update Stok Barang Otomatis;
+    :Simpan Data Transaksi ke Database;
+}
+
+stop
+@enduml
