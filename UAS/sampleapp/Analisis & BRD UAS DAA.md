@@ -61,6 +61,40 @@ Platform ini adalah sistem berbasis web yang membantu admin organisasi sosial da
 - **Ketersediaan**: Platform harus tersedia 24/7 dengan uptime tinggi.
 - **Kemudahan Penggunaan**: Antarmuka pengguna harus ramah dan mudah dinavigasi.
 
-7. Kesimpulan
+7. Rancangan DB
+- Tabel `admins` (Admin)
+
+`id`         | BIGINT (PK, AI) 
+`name`       | VARCHAR(255) 
+`email`      | VARCHAR(255)
+`password`   | VARCHAR(255)
+`created_at` | TIMESTAMP
+`updated_at` | TIMESTAMP
+
+---
+- Tabel `events` (Event Sosial)
+
+`id`         | BIGINT (PK, AI)  
+`name`       | VARCHAR(255)     
+`description`| TEXT             
+`event_date` | DATETIME        
+`location`   | VARCHAR(255)     
+`quota`      | INT              
+`created_at` | TIMESTAMP        
+`updated_at` | TIMESTAMP       
+
+---
+
+- Tabel `participants` (Peserta)
+
+`id`         | BIGINT (PK, AI)
+`event_id`   | BIGINT (FK)
+`name`       | VARCHAR(255)
+`email`      | VARCHAR(255)
+`phone`      | VARCHAR(20)
+`registered_at` | TIMESTAMP
+
+
+8. Kesimpulan
 
 Platform ini akan menjadi solusi yang efektif bagi organisasi sosial dalam mengelola event dan peserta dengan lebih efisien, meningkatkan transparansi dalam administrasi, serta memastikan pelaksanaan event berjalan dengan lancar.
