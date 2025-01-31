@@ -62,4 +62,5 @@ Platform ini adalah sistem berbasis web yang membantu admin organisasi sosial da
 - **Kemudahan Penggunaan**: Antarmuka pengguna harus ramah dan mudah dinavigasi.
 
 7. Kesimpulan
+
 Platform ini akan menjadi solusi yang efektif bagi organisasi sosial dalam mengelola event dan peserta dengan lebih efisien, meningkatkan transparansi dalam administrasi, serta memastikan pelaksanaan event berjalan dengan lancar.
