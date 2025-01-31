@@ -1,0 +1,28 @@
+@startuml
+
+start
+:Admin Login;
+:Admin Mengelola Event;
+  if (Tambah Event?) then (Ya)
+    :Input Data Event;
+    :Simpan ke Database;
+  endif
+
+  if (Edit Event?) then (Ya)
+    :Pilih Event;
+    :Ubah Data Event;
+    :Simpan Perubahan;
+  endif
+
+  if (Hapus Event?) then (Ya)
+    :Pilih Event;
+    :Konfirmasi Penghapusan;
+    :Hapus dari Database;
+  endif
+
+:Melihat Daftar Peserta;
+:Kirim Notifikasi;
+:Melihat Laporan;
+stop
+
+@enduml

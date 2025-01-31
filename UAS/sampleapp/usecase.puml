@@ -1,0 +1,14 @@
+@startuml
+
+actor Admin
+
+rectangle "Manajemen Event" {
+  Admin -- (Tambah Event)
+  Admin -- (Edit Event)
+  Admin -- (Hapus Event)
+  Admin -- (Melihat Daftar Peserta)
+  Admin -- (Kirim Notifikasi)
+  Admin -- (Melihat Laporan)
+}
+
+@enduml
